@@ -7,71 +7,219 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"
+            integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
         <title>project 2</title>
         <style>
-            body{
-               
-                background-repeat: no-repeat;
+            body {
                 background-size: cover;
                 background-color: #442460 !important;
+                background-image: url(img/2.svg);
+                background-repeat: no-repeat;
+                background-size: 190px;
+                background-position: 57px 700px;
             }
-            .r_container{
-                height:900px;
+            .r_container {
+                min-height: 900px;
                 color: #fff;
             }
-            
-            .r_textcolor>ul>li>a:hover{
-                background-color: #424D8345 ;
-                color: #FFB900 !important ;
+            .r_aftererow::after {
+                content: "▾";
+                float: right;
             }
-           .r_aftererow::after{
-            content: "▾";
-            float: right;
+            .r_circle {
+                width: 25px;
+                height: 25px;
+                border-radius: 25px;
+                background-color: #744c97;
             }
-            .r_bg-color{
-            background-color: #424D8345 !important;
-            color:#FFB900 !important;
+            .main {
+                min-height: 850px;
+            }
+            .active {
+                background: #573a70 !important;
+                color: #FFB900 !important;
+            }
+            .active:hover {
+                color: #FFB900 !important;
+                ;
+            }
+            .r_padding>ul>li>a {
+                padding: 48px 20px 8px 20px;
+            }
+            a:hover {
+                background: #573a70 !important;
+            }
+            .r_tbdr {
+                border: 1px solid black;
+                height: auto;
+            }
+            .my_color * {
+                /*universol selecter*/
+                color: #3e3d5f;               
+            }
+            .my_color>h4 {
+                font-family: 'Nunito', sans-serif;
+            }
+            .r_size >ul>li>a,.r_size>p{
+                font-size: 15px;
+            }
+            .r_penal1{
+                min-height: 220px;
+                background-color: #424D83;
+               
+            }
+            .r_penal1:hover{
+                min-height: 470px;
+                background-color: #798CE7;
+            }
+            .r_logo{
+                background-color: #3E3D5F;
+            }
+            .r_penal1_c1{
+                min-height: 253px;
+                background-color: #5264bb;
+               
+            }
+            .r_penal1:hover >div{
+               display: block !important;
             }
         </style>
     </head>
-
     <body>
-        <div class="container r_container p-0">
+        <div class="container r_container  p-0">
             <header class="row ">
-                <div class="col-12 col-sm-12 col-lg-4 pt-4 d-flex align-items-center ">
+                <div class="col-12 col-sm-4 pt-4 d-flex align-items-center ">
                     <img class="bg-light" src="img/3.svg">
                 </div>
-                <div class="col-12 col-sm-12 col-lg-8 r_textcolor m-0 p-0">
-                    <ul class="nav justify-content-end fs-6  nav-pills "  >
-                        <li class="nav-item    ">
-                          <a class="nav-link active pt-5 pb-2 ps-4 pe-4 text-white r_bg-color " aria-current="page" href="#">Home</a>
+                <div class="col-12 col-sm-8 r_padding">
+                    <ul class="nav justify-content-end fs-6  nav-pills float-end">
+                        <li class="nav-item">
+                            <a class="nav-link pt-5 text-white active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item    ">
-                          <a class="nav-link pt-5 pb-2 ps-4 pe-4 text-white " href="#">Service  </a>
+                            <a class="nav-link  pt-5 text-white " href="#">Service </a>
                         </li>
                         <li class="nav-item   ">
-                          <a class="nav-link pt-5 pb-2 ps-4 pe-4 text-white " href="#">Our Plans</a>
+                            <a class="nav-link pt-5 text-white " href="#">Our Plans</a>
                         </li>
                         <li class="nav-item  ">
-                          <a class="nav-link pt-5 pb-2 ps-4 pe-4 text-white" href="#">Tools & Recources</a>
+                            <a class="nav-link pt-5 text-white" href="#">Tools & Recources</a>
                         </li>
                         <li class="nav-item  ">
-                            <a class="nav-link pt-5 pb-2 ps-4 pe-4 text-white r_aftererow" href="#">Nidhi Bokadiya<i class="bi bi-chevron-down"></i></a>
+                            <a class="nav-link pt-5 text-white r_aftererow position-relative pe-0" href="#"><span
+                                    class="d-inline-block r_circle position-absolute top-50 style-0"
+                                    style="left:-8px !important; top:48px !important"></span>Nidhi Bokadiya<i
+                                    class="bi bi-chevron-down"></i></a>
                         </li>
-                      </ul>
+                    </ul>
                 </div>
             </header>
             <div class="main">
                 <h2 class=" pt-5">Welcome Nidhi Bakodiya!</h2>
                 <p class="fs-4 fw-lighter">How can we help you?</p>
                 <p class="fs-6 pt-4">Get start with ideal to manage your project, clients and stakeholders</p>
+                <div class="row">
+                    <div class="col-12 col-sm-3 mb-3">
+                        <div class="rounded-3 r_penal1 p-3 ">
+                            <img class="r_logo p-3 pt-2 pb-2 rounded-3" src="img/4.svg">
+                            <h5 class="pt-3">InnovEx Decision Hub</h5>
+                            <div class="r_penal1_c1 d-none ">a</div>
+                            <a href="#" class="float-end text-white text-decoration-none mt-5">Learn more <i class="fas fa-chevron-right ps-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3 mb-3">
+                        <div class="rounded-3 r_penal1 p-3">
+                            <img class="r_logo rounded-3" src="img/1.svg">
+                            <h5 class="pt-3">MarketPlace Vistaa & Decision Hub (MVDH)</h5>
+                            <div class="r_penal1_c1 d-none">b</div>
+                            <a href="#" class="float-end text-white text-decoration-none mt-4">Learn more <i class="fas fa-chevron-right ps-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3 mb-3">
+                        <div class="rounded-3 r_penal1 p-3">
+                            <img class="r_logo p-3 pt-2 pb-2 rounded-3" src="img/4.svg">
+                            <h5 class="pt-3">SustainX Decision Hub</h5>
+                            <div class="r_penal1_c1 d-none">c</div>
+                            <a href="#" class="float-end text-white text-decoration-none mt-5 ">Learn more <i class="fas fa-chevron-right ps-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3 mb-3">
+                        <div class="rounded-3 r_penal1 p-3">
+                            <img class="r_logo rounded-3" src="img/1.svg">
+                            <h5 class="pt-3">Agile ResearchOps & Knowladge Hub (ARKH)</h5>
+                            <div class="r_penal1_c1 d-none">d</div>
+                            <a href="#" class="float-end text-white text-decoration-none mt-4 ">Learn more <i class="fas fa-chevron-right ps-2"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
-            <footer>
+            <footer class="bg-light">
+                <div class="row m-0 mb-5">
+                    <div class="col-5 my_color p-0 r_size">
+                        <h5 class="m-0 fw-bold">FEATURES</h5>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link p-0" href=" #">Beginer Guide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0 ps-4" href="#">Tools and Resources</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-7 my_color p-0 r_size">
+                        <h5 class="m-0 fw-bold">SUPPORT</h5>
+                        <ul class="nav ">
+                            <li class="nav-item">
+                                <a class="nav-link p-0" href="#">Help Center</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0 ps-4 " href="#">Submit a Ticket</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0 ps-4">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <div class="col-5 my_color r_size p-0">
+                        <img src="img/3.svg">
+                        <p >IDEAL INSIGHTS & DECISION INTILLIGNCE PTE LTD 31 Rohester Drive,Level 24, singapore,138637</p>
+                    </div>
+                    <div class="col-7 r_size p-0">
+                        <ul class="nav my_color float-end">
+                            <li class="nav-item">
+                                <a class="nav-link p-1" href="#">
+                                    <img src="img/twitter.svg">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-1 pe-0" href="#">
+                                    <img src="img/youtube-icon.svg">
+                                </a>
+                            </li>
+                        </ul>
 
+                        <div class="clearfix"></div>
+
+                        <ul class="nav my_color float-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Terms of Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pe-0" href="#">Privacy policy</a>
+                            </li>                           
+                        </ul>
+                    </div>
+                </div>
             </footer>
-
         </div>
 
 
