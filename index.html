@@ -7,36 +7,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"
-            integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
         <title>project 2</title>
         <style>
-            body {
-                background-size: cover;
-                background-color: #442460 !important;
-                background-image: url(img/2.svg);
-                background-repeat: no-repeat;
-                background-size: 190px;
-                background-position: 57px 700px;
+            body {    
+                background-image:url(img/2.svg), url(img/Footer.svg),url(img/Blue.svg),url(img/Orange.svg);
+                background-repeat:no-repeat,no-repeat,no-repeat,no-repeat;
+                background-position:57px 650px,-40px 825px,-280px -110px,-40px 155px;
+                
+                /* background-image: url(img/2.svg);
+                background-repeat: no-repeat;                
+                background-position: 57px 700px; */
             }
             .r_container {
                 min-height: 900px;
                 color: #fff;
             }
-            .r_aftererow::after {
-                content: "▾";
-                float: right;
-            }
+           
             .r_circle {
                 width: 25px;
                 height: 25px;
                 border-radius: 25px;
                 background-color: #744c97;
+            }
+            .r_nidhi{
+               color: #E8C8ED !important;
             }
             .main {
                 min-height: 850px;
@@ -47,14 +46,10 @@
             }
             .active:hover {
                 color: #FFB900 !important;
-                ;
             }
             .r_padding>ul>li>a {
                 padding: 48px 20px 8px 20px;
-            }
-            a:hover {
-                background: #573a70 !important;
-            }
+            }        
             .r_tbdr {
                 border: 1px solid black;
                 height: auto;
@@ -86,7 +81,7 @@
                 background-color: #5264bb;
                
             }
-            .r_penal1:hover >div{
+            .r_penal1:hover >div{            
                display: block !important;
             }
         </style>
@@ -95,7 +90,7 @@
         <div class="container r_container  p-0">
             <header class="row ">
                 <div class="col-12 col-sm-4 pt-4 d-flex align-items-center ">
-                    <img class="bg-light" src="img/3.svg" alt="#">
+                    <img src="img/Ideal-logo-07.png" alt="#">
                 </div>
                 <div class="col-12 col-sm-8 r_padding">
                     <ul class="nav justify-content-end fs-6  nav-pills float-end">
@@ -112,10 +107,9 @@
                             <a class="nav-link pt-5 text-white" href="#">Tools & Recources</a>
                         </li>
                         <li class="nav-item  ">
-                            <a class="nav-link pt-5 text-white r_aftererow position-relative pe-0" href="#"><span
+                            <a class="nav-link pt-5 text-white  position-relative pe-0 r_nidhi" href="#"><span
                                     class="d-inline-block r_circle position-absolute top-50 style-0"
-                                    style="left:-8px !important; top:48px !important"></span>Nidhi Bokadiya<i
-                                    class="bi bi-chevron-down"></i></a>
+                                    style="left:-8px !important; top:48px !important"></span>Nidhi Bokadiya<i class="fas fa-chevron-down ps-2"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -127,7 +121,7 @@
                 <div class="row">
                     <div class="col-12 col-sm-3 mb-3">
                         <div class="rounded-3 r_penal1 p-3 ">
-                            <img class="r_logo p-3 pt-2 pb-2 rounded-3" src="img/4.svg" alt="#">
+                            <img class="r_logo  rounded-3" src="img/Icon.svg" alt="#">
                             <h5 class="pt-3">InnovEx Decision Hub</h5>
                             <div class="r_penal1_c1 d-none ">a</div>
                             <a href="#" class="float-end text-white text-decoration-none mt-5">Learn more <i class="fas fa-chevron-right ps-2"></i></a>
@@ -143,7 +137,7 @@
                     </div>
                     <div class="col-12 col-sm-3 mb-3">
                         <div class="rounded-3 r_penal1 p-3">
-                            <img class="r_logo p-3 pt-2 pb-2 rounded-3" src="img/4.svg" alt="#">
+                            <img class="r_logo  rounded-3" src="img/Icon.svg" alt="#">
                             <h5 class="pt-3">SustainX Decision Hub</h5>
                             <div class="r_penal1_c1 d-none">c</div>
                             <a href="#" class="float-end text-white text-decoration-none mt-5 ">Learn more <i class="fas fa-chevron-right ps-2"></i></a>
@@ -160,7 +154,7 @@
                     
                 </div>
             </div>
-            <footer class="bg-light">
+            <footer class="mb-4">
                 <div class="row m-0 mb-5">
                     <div class="col-5 my_color p-0 r_size">
                         <h5 class="m-0 fw-bold">FEATURES</h5>
