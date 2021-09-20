@@ -20,156 +20,173 @@
             background-color: #f3f3f3;
             background-image: url(img/2.svg), url(img/Footer.svg), url(img/Blue.svg), url(img/Orange.svg);
             background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-            background-position: 57px 650px, -40px 825px, -280px -110px, -40px 155px;
-
-            /* background-image: url(img/2.svg);
-                background-repeat: no-repeat;                
-                background-position: 57px 700px; */
+            background-position: 45px 650px, -40px 825px, -280px -110px, -40px 155px;
         }
-
         .r_container {
             min-height: 900px;
             color: #fff;
         }
-
+        .fa-bars {
+            color: #fff;
+        }
+        header .navbar-toggler {
+            border: 1px solid #fff !important;
+            box-shadow: none !important;
+        }
         .r_circle {
             width: 25px;
             height: 25px;
             border-radius: 25px;
             background-color: #744c97;
         }
-
         .r_nidhi {
             color: #E8C8ED !important;
         }
-
+        .dropdown-toggle::after {
+            display: none;
+        }
         .main {
             min-height: 850px;
         }
-
         .active {
             background: #573a70 !important;
             color: #FFB900 !important;
         }
-
         .active:hover {
             color: #FFB900 !important;
         }
-
-        .r_padding>ul>li>a {
-            padding: 48px 20px 8px 20px;
-        }
-
         .r_tbdr {
             border: 1px solid black !important;
             height: auto !important;
         }
-
         .my_color * {
             /*universol selecter*/
             color: #3e3d5f;
         }
-
         .my_color>h4 {
             font-family: 'Nunito', sans-serif;
         }
-
         .r_size>ul>li>a,
         .r_size>p {
             font-size: 15px;
         }
-
         .r_penal1 {
             min-height: 220px;
             background-color: #424D83;
             cursor: pointer;
         }
-
         .r_penal1:hover {
-            min-height: 470px;
+            min-height: 400px;
             background-color: #798CE7;
         }
-
         .r_logo {
             background-color: #3E3D5F;
         }
-
         .r_penal1_c1 {
-            min-height: 253px;
             background-color: #5264bb;
-
         }
-
         .r_penal1:hover>div {
             display: block !important;
+        }
+
+        @media screen and (max-width:992px) {
+                .r_mediapadding>li > a{
+                    
+                    padding-top: 10px !important;
+                }
+                .r_circle{
+                    margin-top: -38px;
+                    margin-left: -6px;
+                }
         }
     </style>
 </head>
 
 <body>
-    <div class="container r_container  p-0">
+    <div class="container r_container p-0">
         <header class="m-0">
-            <nav class=" navbar navbar-expand-lg navbar-light p-0">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
-                    <img src="img/Ideal-logo-07.png" alt="#">
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse d-flex justify-content-end row " id="navbarNav">
-                    <ul class="navbar-nav col-12 col-md-12 col-lg-7 ">
-                      <li class="nav-item">
-                        <a class="nav-link pt-5 ps-3 pe-3 text-white active"  href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link pt-5 ps-3 pe-3 text-white" href="#">Service</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link pt-5 ps-3 pe-3 text-white" href="#">Our Plans</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link pt-5 ps-3 pe-3 text-white ">Tools & Recources</a>
-                      </li>
-                      <li class="nav-item  ">
-                        <a class="nav-link pt-5 ps-5 pe-0 text-white  position-relative pe-0 r_nidhi d-lg-none d-xl-block" href="#"><span
-                                class="d-inline-block r_circle position-absolute top-50 style-0"
-                                style="left:10px !important; top:47px !important"></span>Nidhi Bokadiya<i class="fas fa-chevron-down ps-2"></i></a>
-                    </li>
-                    </ul>
-                  </div>
+                    <a class="navbar-brand" href="#">
+                        <img src="img/Ideal-logo-07.png" alt="#">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="mx-auto"></div>
+                        <ul class="navbar-nav mb-2 mb-lg-0 r_mediapadding">
+                            <li class="nav-item">
+                                <a class="nav-link pt-5 ps-3 pe-3 text-white active " href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pt-5 ps-3 pe-3 text-white" href="#">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pt-5 ps-3 pe-3 text-white" href="#">Our Plans</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pt-5 ps-3 pe-3 text-white" href="#">Tools & Recources</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle pt-5 ps-5 pe-0 text-white pe-0 r_nidhi d-lg-none d-xl-block"
+                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <span class="d-inline-block r_circle position-absolute"
+                                        style="left:20px !important; top:47px !important"></span>Nidhi Bokadiya<i
+                                        class="fas fa-chevron-down ps-2"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </nav>
-            
+            </nav>
         </header>
         <div class="main p-3">
             <h2 class=" pt-5">Welcome Nidhi Bakodiya!</h2>
             <p class="fs-4 fw-lighter">How can we help you?</p>
-            <p class="fs-6 pt-5">Get start with ideal to manage your project,Ritik Bheelawat project. clients and stakeholders</p>
+            <p class="fs-6 pt-5">Get start with ideal to manage your project,Ritik Bheelawat project. clients and
+                stakeholders</p>
             <div class="row">
-                <div class="col-12 col-sm-6  col-lg-3 mb-3">
-                    <div class="rounded-3 r_penal1 p-3 ">
-                        <img class="r_logo  rounded-3" src="img/Icon.svg" alt="#">
-                        <h5 class="pt-3">InnovEx Decision Hub</h5>
-                        <div class="r_penal1_c1 d-none ">a</div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                    <div class="rounded-3 r_penal1 p-3">
+                        <img class="r_logo rounded-3" src="img/Icon.svg" alt="#">
+                        <h5 class="pt-3 fs-6">InnovEx Decision Hub</h5>
+                        <div class="r_penal1_c1 d-none ">
+                            <img class="img-fluid" src="img/penal1.png" alt="#">
+                        </div>
                         <a href="#" class="float-end text-white text-decoration-none mt-5">Learn more <i
                                 class="fas fa-chevron-right ps-2"></i></a>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6  col-lg-3 mb-3">
+                <div class="col-12 col-sm-6 col-lg-3 mb-3">
                     <div class="rounded-3 r_penal1 p-3">
                         <img class="r_logo rounded-3" src="img/1.svg" alt="#">
-                        <h5 class="pt-3">MarketPlace Vistaa & Decision Hub (MVDH)</h5>
-                        <div class="r_penal1_c1 d-none">b</div>
+                        <h5 class="pt-3 fs-6">MarketPlace Vistaa & Decision Hub (MVDH)</h5>
+                        <div class="r_penal1_c1 d-none">
+                            <img class="img-fluid" src="img/penal2.png" alt="#">
+                        </div>
                         <a href="#" class="float-end text-white text-decoration-none mt-4">Learn more <i
                                 class="fas fa-chevron-right ps-2"></i></a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3 mb-3">
                     <div class="rounded-3 r_penal1 p-3">
-                        <img class="r_logo  rounded-3" src="img/Icon.svg" alt="#">
-                        <h5 class="pt-3">SustainX Decision Hub</h5>
-                        <div class="r_penal1_c1 d-none">c</div>
+                        <img class="r_logo rounded-3" src="img/Icon.svg" alt="#">
+                        <h5 class="pt-3 fs-6">SustainX Decision Hub</h5>
+                        <div class="r_penal1_c1 d-none">
+                            <img class="img-fluid" src="img/penal3.png" alt="#">
+                        </div>
                         <a href="#" class="float-end text-white text-decoration-none mt-5 ">Learn more <i
                                 class="fas fa-chevron-right ps-2"></i></a>
                     </div>
@@ -177,8 +194,10 @@
                 <div class="col-12 col-sm-6 col-lg-3 mb-3">
                     <div class="rounded-3 r_penal1 p-3">
                         <img class="r_logo rounded-3" src="img/1.svg" alt="#">
-                        <h5 class="pt-3">Agile ResearchOps & Knowladge Hub (ARKH)</h5>
-                        <div class="r_penal1_c1 d-none">d</div>
+                        <h5 class="pt-3 fs-6">Agile ResearchOps & Knowladge Hub (ARKH)</h5>
+                        <div class="r_penal1_c1 d-none">
+                            <img class="img-fluid" src="img/penal4.png" alt="#">
+                        </div>
                         <a href="#" class="float-end text-white text-decoration-none mt-4 ">Learn more <i
                                 class="fas fa-chevron-right ps-2"></i></a>
                     </div>
@@ -186,7 +205,7 @@
 
             </div>
         </div>
-        <footer class="mb-4  p-4">
+        <footer class="mb-4 p-4">
             <div class="row mb-5 ">
                 <div class="col-5 my_color r_size">
                     <h5 class="m-0 fw-bold">FEATURES</h5>
